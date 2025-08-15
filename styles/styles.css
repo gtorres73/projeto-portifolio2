@@ -258,3 +258,43 @@ h1{
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    /* Ajusta o cabeçalho para telas menores */
+    .cabecalho {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    /* Centraliza e ajusta o tamanho da foto de perfil */
+    .foto-perfil {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 1rem;
+    }
+
+    /* Reduz o tamanho da fonte do nome */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Reduz o tamanho da fonte do texto do cabeçalho */
+    .cabecalho-texto {
+        font-size: 1.2rem;
+    }
+
+    /* Alinha o texto sobre mim ao centro */
+    .sobre-caixa {
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    /* Ajusta a exibição dos cards de projeto para colunas em telas menores */
+    .projetos-caixa {
+        grid-template-columns: 1fr;
+    }
+
+    /* Centraliza o formulário de contato */
+    .formulario-contato {
+        padding: 1rem;
+    }
+}
