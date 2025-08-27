@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Portifolio</title>
 </head>
+
 <body>
     <div class="particulas">
 
@@ -13,31 +16,33 @@
     <nav class="navegacao">
         <ul class="menu">
             <li>
-                <a href="#inicio"class="menu-link">Inicio</a>
+                <a href="#inicio" class="menu-link">Inicio</a>
             </li>
             <li>
-                <a href="#sobre"class="menu-link">Sobre</a>
+                <a href="#sobre" class="menu-link">Sobre</a>
             </li>
             <li>
-                <a href="#projetos"class="menu-link">Projetos</a>
+                <a href="#projetos" class="menu-link">Projetos</a>
             </li>
             <li>
-                <a href="#contato"class="menu-link">Contato</a>
+                <a href="#contato" class="menu-link">Contato</a>
             </li>
         </ul>
     </nav>
     <main id="inicio" class="cabecalho">
         <img src="img/avatar.png" alt="" class="foto-perfil">
-        <h1>Guilherme Torres</h1>
+        <h1><span>&lt;/</span>Guilherme Torres<span>&gt;</span></h1>
         <p class="cabecalho-texto">Dev Front End</p>
-   
-        
+
+
     </main>
     <section id="sobre" class="sobre">
         <h2 class="sobre-title">Sobre Mim</h2>
         <div class="sobre-caixa">
-            <p class="sobre-texto"> 
-                Gosto de transformar código em experiências visuais que fazem sentido e funcionam bem. Trabalho com HTML, CSS e JavaScript, e estou sempre explorando novas formas de deixar a web mais bonita, rápida e acessível.
+            <p class="sobre-texto">
+                Gosto de transformar código em experiências visuais que fazem sentido e funcionam bem. Trabalho com
+                HTML, CSS e JavaScript, e estou sempre explorando novas formas de deixar a web mais bonita, rápida e
+                acessível.
             </p>
         </div>
     </section>
@@ -46,36 +51,59 @@
         <div class="projetos-caixa">
 
             <div class="projetos-card">
-                <a href="https://gtorres73.github.io/projeto-login2/" target="_blank"><img src="img/loginsite.png" alt="projeto login" class="projeto-imagem"></a>
+                <a href="https://gtorres73.github.io/projeto-login2/" target="_blank"><img src="img/login.png"
+                        alt="projeto login" class="projeto-imagem"></a>
                 <div class="caixa-texto-projeto">
-                    <h3 class="info-projetos">Pagina de Login Moderna</h3>
-                    <p class="paragrafo-projeto">"Solução de login intuitiva com feedback visual interativo, design transparente e navegação otimizada."</p>
+                    <div>
+                        <h3 class="info-projetos">Pagina de Login Moderna</h3>
+                        <p class="paragrafo-projeto">"Solução de login intuitiva com feedback visual interativo, design
+                            transparente e navegação otimizada."</p>
+                    </div>
+                    <div class="botoes-projeto">
+                        <a href="#" target="_blank" class="botao-projeto">GitHub</a>
+                        <a href="https://gtorres73.github.io/projeto-login2/" target="_blank"
+                            class="botao-projeto">Prévia</a>
+                    </div>
                 </div>
             </div>
 
             <div class="projetos-card">
-                <img src="img/oculos.jpg" alt="" class="projeto-imagem">
+                <img src="img/oishii.png" alt="Projeto Oiishi Sushi" class="projeto-imagem">
                 <div class="caixa-texto-projeto">
-                    <h3 class="info-projetos">Gaming Glasses</h3>
-                    <p class="paragrafo-projeto">Under devlopment</p>
+                    <div>
+                        <h3 class="info-projetos">Oiishi Sushi</h3>
+                        <p class="paragrafo-projeto">Este projeto é uma página web para o restaurante "Oiishi-Sushi",
+                            apresentando um design moderno e totalmente responsivo. O site foi criado para exibir o
+                            cardápio e facilitar o acesso a informações importantes do restaurante</p>
+                    </div>
+                    <div class="botoes-projeto">
+                        <a href="https://github.com/gtorres73/Oiishi-Sushi" target="_blank" class="botao-projeto">GitHub</a>
+                        <a href="https://gtorres73.github.io/Oiishi-Sushi/" target="_blank" class="botao-projeto">Prévia</a>
+                    </div>
                 </div>
             </div>
 
             <div class="projetos-card">
-                <img src="img/cidade.jpg" alt="" class="projeto-imagem">
+                <img src="img/breve.jpg" alt="em breve" class="projeto-imagem">
                 <div class="caixa-texto-projeto">
-                    <h3 class="info-projetos">Night City</h3>
-                    <p class="paragrafo-projeto">Under devlopment</p>
+                    <div>
+                        <h3 class="info-projetos">Em breve...</h3>
+                        <p class="paragrafo-projeto">Under development</p>
+                    </div>
+                    <div class="botoes-projeto">
+                        <a href="#" target="_blank" class="botao-projeto">GitHub</a>
+                        <a href="#" target="_blank" class="botao-projeto">Prévia</a>
+                    </div>
                 </div>
             </div>
-        
+
         </div>
     </section>
     <section class="contato" id="contato">
         <h2 class="contatos-titulo">Entre em Contato Comigo</h2>
-        <form action="" class="formulario-contato" id="forumulario" onsubmit="enviarwhats(event)"
+        <form action="" class="formulario-contato" id="forumulario" onsubmit="enviarwhats(event)">
             <div class="grupo-form">
-                <input  placeholder="Nome" class="campo-form" id="nome">
+                <input placeholder="Nome" class="campo-form" id="nome">
             </div>
             <div class="grupo-form">
                 <textarea placeholder="Digite Sua Mensagem" class="campo-form" id="mensagem"></textarea>
@@ -84,25 +112,26 @@
         </form>
     </section>
     <script>
-        function enviarwhats(event){
-        event.preventDefault()   
-        const nome = document.getElementById('nome').value;
-        const mensagem = document.getElementById('mensagem').value;
-        const telefone = '5511954805011'
-        const texto = `Olá me chamo ${nome}, ${mensagem}` 
-        const msgFormatada = encodeURIComponent (texto)
-        const url = `https://wa.me/${telefone}?text=${msgFormatada}`
-        
-        window.open(url, 'blank_')
-        }
-        
-         </script>
+        function enviarwhats(event) {
+            event.preventDefault()
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5511954805011'
+            const texto = `Olá me chamo ${nome}, ${mensagem}`
+            const msgFormatada = encodeURIComponent(texto)
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`
 
-<footer id="footer">
-    <div class="footer-caixa">
-        <p class="footer-text">Desenvolvido por Guilherme Torres</p>
-    </div>
-</footer>
-            
+            window.open(url, 'blank_')
+        }
+
+    </script>
+
+    <footer id="footer">
+        <div class="footer-caixa">
+            <p class="footer-text">Desenvolvido por Guilherme Torres</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
